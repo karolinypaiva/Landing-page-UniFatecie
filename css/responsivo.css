@@ -1,0 +1,253 @@
+@media screen and (max-width: 1024px) {
+  .logo-unifatecie {
+    width: 150px;
+  }
+
+  /* Elimina los margenes al nav */
+  .navbar-menu {
+    margin: 0;
+  }
+
+  /* Esconde el menu normal */
+  .navbar-menu .menu {
+    display: none;
+  }
+
+  /* Muestra el mini menu */
+  .navbar-mini-menu {
+    display: block;
+  }
+
+  /* Esconde la lista del mini menu */
+  .navbar-mini-menu .mini-menu-options {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+
+
+
+  .banner-informacoes h4 {
+    font-size: 1.2em;
+  }
+
+  .banner-informacoes h1 {
+    font-size: 1.3em;
+  }
+
+  .banner-informacoes h2 {
+    font-size: 1.4em;
+  }
+
+
+
+
+
+  .conceito-mec {
+    padding: 10px;
+  }
+
+  .conceito-mec {
+    height: 100%;
+    text-align: center;
+  }
+
+  .conceito-mec h2 {
+    font-size: 2rem;
+  }
+
+  .conceito-mec h3 {
+    font-size: 1rem;
+  }
+
+
+
+
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  }
+
+
+
+
+
+  .titulo-cursos {
+    font-size: 1.8em;
+  }
+
+  .container-tipo-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .tipo-cursos h3 {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .tipo-cursos-p {
+    font-size: 0.9em;
+    padding-top: 10px;
+  }
+
+  .buttons-action-duvidas button {
+    font-size: 12px;
+    padding: 10px 110px;
+    width: 100%;
+  }
+
+
+
+
+
+
+  .section-lista-cursos-pos {
+    padding: 10px;
+
+  }
+
+  .lista-cursos-pos-graduacao-titulo {
+    color: white;
+
+  }
+
+  .lista-cursos-pos-graduacao-titulo h3 {
+    font-size: 1.8em;
+  }
+
+  .lista-cursos-pos-graduacao-titulo h2 {
+    font-size: 1em;
+    padding-top: 20px;
+  }
+
+  .lista-cursos-pos-graduacao-titulo h1 {
+    font-size: 3.5em;
+  }
+
+  .lista-cursos-pos-graduacao span {
+    font-size: 2em;
+  }
+
+  .lista-cursos-pos-graduacao {
+    width: 100%;
+
+  }
+
+  .lista-cursos-pos-graduacao.saude {
+    max-width: 100%;
+    width: 100%;
+
+  }
+
+  .buttons-action-duvidas-pos-graduacao button {
+    font-size: 12px;
+    padding: 10px 110px;
+  }
+
+  .titulo-h2 {
+    font-size: 1em;
+    margin: 30px 20px 10px 20px;
+
+  }
+
+  .img-h1-form {
+    display: none;
+  }
+
+
+
+
+
+  .formulario {
+    width: 90%;
+  }
+
+  .formulario h1 {
+    font-size: 30px;
+  }
+
+  .separator-titulo {
+    width: 70%;
+  }
+
+  .formulario p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .separator-formulario {
+    width: 80%;
+    margin-top: 0;
+    padding-top: 2px;
+  }
+
+
+  footer p {
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 1024px) {
+
+  .lista-cursos-pos-graduacao,
+  .lista-cursos-pos-graduacao.saude {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-tipo-cursos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-tipo-cursos{
+    display: grid;
+  }
+
+
+
+
+
+  .section-lista-cursos-pos{
+    padding: 0;
+  }
+
+  .lista-cursos-pos-graduacao span{
+    font-size: 2em;
+  }
+
+  .section-lista-cursos-pos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .buttons-action-duvidas-pos-graduacao button{
+    padding: 10px 100px;
+  }
+
+
+.separator-titulo{
+    width: 70%;
+  }
+  
+}

@@ -1,0 +1,784 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e8e6e6;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+/* INICIO  -  MENU */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 10px 210px;
+}
+
+.logo-unifatecie {
+    width: 20%;
+}
+
+.lista-menu {
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu li {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.lista-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: 0.25s linear;
+}
+
+.lista-menu li a:hover {
+    color: #FE6603;
+    transition: 0.25s linear;
+}
+
+.navbar-menu {
+    margin: 2% auto;
+    max-width: 1000px;
+    width: calc(100%);
+    display: flex;
+    align-items: center;
+}
+
+/* Menu */
+.navbar-menu .menu {
+    display: flex;
+    text-align: center;
+}
+
+/* List items*/
+.navbar-menu .menu li {
+    display: inline-block;
+}
+
+/* Cuando se haga hover sobre el item el submenu se activa
+   en caso tuviese */
+.navbar-menu .menu li:hover>.submenu {
+    display: block;
+}
+
+/* Submenus*/
+.navbar-menu .menu li ul {
+    background-color: #FE6603;
+    display: none;
+    position: absolute;
+}
+
+/* List items de submenus */
+.navbar-menu .menu li ul li {
+    display: block;
+}
+
+
+/******************************************************
+                          MINI MENU
+  ******************************************************/
+/* Mini menu */
+.navbar-mini-menu {
+    display: none;
+}
+
+/* Bloque que tiene el boton para desplegar el mini menu */
+.navbar-mini-menu .menu-select {
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+/* Span que contiene el icono*/
+.navbar-mini-menu .menu-select .btn-select {
+    background-image: url("../img/menu.png");
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+/* Lista del mini menu */
+.navbar-mini-menu .mini-menu-options {
+    display: block;
+}
+
+/* Items del mini menu */
+.navbar-mini-menu .mini-menu-options li {
+    display: block;
+}
+
+/* Submenus de los items del mini menu */
+.navbar-mini-menu .mini-menu-options li .submenu {
+    display: none;
+}
+
+.navbar-mini-menu .mini-menu-options li:focus {
+    outline: 0;
+}
+
+.navbar-mini-menu .mini-menu-options li:focus>.submenu {
+    display: block;
+}
+
+/* Enlaces del mini menu */
+.navbar-mini-menu .mini-menu-options li a {
+    display: block;
+    padding: 1rem 1.5rem;
+}
+
+/*  BANNER -- INICIO */
+
+.img-banner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-informacoes {
+    text-align: center;
+}
+
+.banner-informacoes h4 {
+    font-size: 1.7em;
+    padding: 20px;
+}
+
+.banner-informacoes h1 {
+    background-color: black;
+    color: white;
+    font-size: 2.5em;
+    padding: 16px;
+    margin: 0;
+}
+
+.frase-span-h1 {
+    background-color: #fff;
+    color: #FE6603;
+    font-weight: 900;
+    padding: 0 0.2em;
+    border-radius: 5px;
+
+}
+
+.banner-informacoes h2 {
+    color: #FE6603;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.banner-informacoes p {
+    color: black;
+    font-size: 1em;
+    font-weight: 700
+}
+
+.font-weight-bold-text-dark {
+    font-size: 1.5em;
+}
+
+
+/*  RELOGIO --- GATILHO */
+
+.countdown {
+    padding: 20PX;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-action {
+    margin-top: 20px;
+}
+
+.buttons-action button {
+    background-color: #FE6603;
+    box-shadow: 1px 1px 5px 2px #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.25s linear;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+.buttons-action :hover {
+    transform: scale(1.1);
+    transition: 0.25s linear;
+    background-color: #d16218;
+}
+
+/*  CONCEITO  -  MEC  - NOTA MAXIMA  */
+
+.conceito-mec {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.conceito-mec-img {
+    width: 174px;
+    height: 166px;
+}
+
+.conceito-mec h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+}
+
+.conceito-mec h3 {
+    color: #FE6603;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/*  CURSOS - TIPOS E BOTOES  */
+
+.titulo-cursos {
+    font-family: 'Montserrat', sans-serif;
+    color: #FE6603;
+    font-size: 3em;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    padding: 0;
+}
+
+.titulo-span {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.separator-cursos {
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+    justify-content: center;
+    color: #FE6603;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.separator-cursos i {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.3em;
+}
+
+.separator-cursos::before,
+.separator-cursos::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid black;
+    width: 50%;
+}
+
+.container-tipo-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tipo-cursos {
+    border: 1px solid #ffffff;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.tipo-cursos h3 {
+    color: #FE6603;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tipo-cursos-p {
+    margin: 0 0 30px 0;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+
+.lista-cursos {
+    position: relative;
+    min-height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-cursos p {
+    color: rgb(79, 79, 79);
+    border: 1px solid none;
+    box-shadow: 1px 1px 5px 2px #fff;
+    ;
+    list-style: none;
+    margin: 3px;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: left;
+    font-weight: 300;
+}
+
+.lista-cursos .nome-curso {
+    max-width: 80%;
+}
+
+.buttons-action-duvidas button {
+    background-color: #FE6603;
+    box-shadow: 1px 1px 5px 2px #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 110px;
+    font-size: 14px;
+    transition: 0.25s linear;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.buttons-action-duvidas button:hover {
+    transform: scale(1.1);
+    transition: 0.25s linear;
+    background-color: #FE6603;
+
+}
+
+/*   ---  PÓS-GRADUAÇÃO  --- */
+
+.container-pos-graduacao {
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.lista-cursos-pos-graduacao-titulo {
+
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-right: 100px;
+
+}
+
+.lista-cursos-pos-graduacao-titulo h3 {
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.lista-cursos-pos-graduacao-titulo h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.lista-cursos-pos-graduacao-titulo h1 {
+    color: #FE6603;
+    font-size: 5.3em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.separator-pos-graduacao {
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+    justify-content: center;
+    color: #FE6603;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.separator-pos-graduacao i {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.3em;
+}
+
+.separator-pos-graduacao::before,
+.separator-pos-graduacao::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid #f4f4f4;
+    width: 50%;
+}
+
+.lista-cursos-pos-graduacao {
+    border: 1px solid;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(91, 91, 91);
+    justify-content: space-between;
+    width: 43%;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.lista-cursos-pos-graduacao p {
+    color: #ffffffe8;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 20px;
+}
+
+.lista-cursos-pos-graduacao span {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista-cursos-pos-graduacao.saude {
+    width: 86.6%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+.section-lista-cursos-pos {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+.buttons-action-duvidas-pos-graduacao button {
+    background-color: #FE6603;
+    box-shadow: 1px 1px 5px 2px rgba(94, 94, 94, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 200px;
+    font-size: 12px;
+    transition: 0.25s linear;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    margin-top: 30px;
+}
+
+
+.buttons-action-duvidas-pos-graduacao button:hover {
+    transform: scale(1.1);
+    transition: 0.25s linear;
+    background-color: #e79158;
+}
+
+/*   FORMULARIO  */
+
+.container-formulario {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.titulo-h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.separator-titulo {
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    color: #FE6603;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.separator-titulo i {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.3em;
+}
+
+.separator-titulo::before,
+.separator-titulo::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid #000000;
+    width: 50%;
+}
+
+.img-fundo-formulario {
+    background-image: url(../img/img-fundo-formulario.png);
+    opacity: 0.16;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-h1-form {
+    display: flex;
+    width: 38%;
+    float: right;
+    padding-left: 50px;
+    height: 600px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-h1-form h1 {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.formulario {
+    background-color: white;
+    margin: 15px 0 0 0;
+    padding: 10px 20px 5px 20px;
+    border-radius: 10px;
+    float: left;
+    width: 560px;
+    box-shadow: 1px 1px 5px 2px #c9c9c9;
+}
+
+.formulario h1 {
+    color: #FE6603;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario p {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.formulario p span {
+    font-weight: 600;
+}
+
+.separator-formulario {
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    color: #FE6603;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.separator-formulario i {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.3em;
+}
+
+.separator-formulario::before,
+.separator-formulario::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid #000000;
+    width: 50%;
+}
+
+.formulario form {
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.formulario form input {
+    margin: 2px 2px 30px 0;
+    padding: 5px;
+    font-size: 0.85em;
+    border: 1px solid #cecece;
+    line-height: 40px;
+    background-color: #f7f7f7;
+}
+
+.form-curso-interesse {
+    margin-bottom: 30px;
+    margin-top: 2px;
+    height: 50px;
+    font-size: 0.84em;
+    padding: 5px;
+    color: #4f4f4f;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0;
+    border: 1px solid #cecece;
+    background-color: #f7f7f7;
+}
+
+.form-curso-interesse option {
+    color: #666666;
+}
+
+.form-nome::placeholder {
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-email::placeholder {
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-whatsapp::placeholder {
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario .button-enviar {
+    background-color: #FE6603;
+    border: none;
+    box-shadow: 1px 1px 5px 2px #999;
+    border-width: 0.5px;
+    border-bottom: 28px;
+    text-shadow: 1px 1px 25px #FE6603;
+    font-weight: 600;
+    font-size: 1em;
+    bottom: 5%;
+    width: 260px;
+    height: 45px;
+    line-height: 40px;
+    background: #FE6603;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.formulario .button-enviar:hover {
+    background: #fc7c27;
+}
+
+.form-seguro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #111111;
+    width: 100%;
+    height: 300px;
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-button-regulamento button {
+    background-color: #111111;
+    color: #f7f7f7;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-button-regulamento:hover {
+    transform: scale(1.1);
+    transition: 0.25s linear;
+
+}
+
+footer p {
+    margin: 30px;
+    padding: 5px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
