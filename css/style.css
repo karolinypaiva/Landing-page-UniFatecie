@@ -768,6 +768,7 @@ footer {
     padding: 15px 50px;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 .container-button-regulamento:hover {
